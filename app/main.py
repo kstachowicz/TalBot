@@ -47,17 +47,23 @@ def preprocess_question(question):
 	"""sentences = nltk.sent_tokenize(question)"""
 	sentences = nltk.word_tokenize(question) #for sent in question]
 	sentences = nltk.pos_tag(sentences) #for sent in sentences]
-	sentences = transformations.swap_verb_phrase(sentences)
-	sentences = transformations.swap_infinitive_phrase(sentences)
-	#sentences = transformations.singularize_plurar_noun(sentences)
-	sentences = transformations.remove_stopwords(sentences)
-	sentences = transformations.filter_insignificant(sentences)
-
-	commands.execute(sentences)
-	
 
 	print "Tagged"
 	print sentences
+	
+	sentences = transformations.filter_insignificant(sentences)
+	
+	#sentences = transformations.swap_verb_phrase(sentences)
+	print "after 1", sentences
+	sentences = transformations.swap_infinitive_phrase(sentences)
+	print "after 2", sentences
+	#sentences = transformations.singularize_plurar_noun(sentences)
+	sentences = transformations.remove_stopwords(sentences)
+	print "after 3", sentences
+	print "after 4", sentences
+
+	commands.execute(sentences)
+	
 	print "NE:"
 	sent = sentences 
 	ne_sentences = nltk.ne_chunk(sent)
