@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+
+<category>
+<pattern>SAY *</pattern>
+<template><system>python system/translate.py <star /></system></template>
+</category>
+
+
+<category>
+<pattern>TRANSLATE *</pattern>
+
+<template><srai>SAY <star /></srai></template>
+</category>
+
+
+<category>
+<pattern>TELL *</pattern>
+<template><srai>SAY <star /></srai></template>
+</category>
+
+
+</aiml>

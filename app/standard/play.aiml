@@ -14,7 +14,7 @@
 <category>
 <pattern>* SEARCH YOUTUBE</pattern>
 
-<template><system>open "http://www.youtube.com/embed?listType=search&amp;list=<person/>&amp;autoplay=1"</srai>Here is a video about <person/>. I hope you like it.</template>
+<template><system>open "http://www.youtube.com/embed?listType=search&amp;list=<star/>&amp;autoplay=1"</system>Here is a video about <star />. I hope you like it.</template>
 </category>
 
 <category>
