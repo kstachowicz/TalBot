@@ -24,7 +24,7 @@
 		<pattern>GOOGLE</pattern>
 		<template>
 			It looks like you want to search something. I'm going to Google.
-			<srai>OPEN http://google.com</srai>
+			<srai>OPEN WEBSITE http://google.com</srai>
 			
 		</template>
 	</category>
@@ -120,33 +120,43 @@
 		</template>
 	</category>
 
-
+<topic name="default_calendar">
 	<category>
 		<pattern>*</pattern>
-		<template>I will set default calendar app as <star />
+		<template>
+			I will set default calendar app as <star />
 			<think><set name="calendar"><star /></set>
 			<set name="topic"></set></think>
 		</template>
 	</category>
+</topic>
 
 	<category>
 		<pattern>MAP</pattern>
 		<template>I'm opening Google Maps.
-			<srai>OPEN http://maps.google.com</srai>
+			<srai>OPEN WEBSITE http://maps.google.com</srai>
 			</template>
 	</category>
 
 
 
 <category>
+	<pattern>OPEN WEBSITE *</pattern>
+	<template>
+		<system>open <star /></system>
+	</template>
+	</category>
+
+<category>
 	<pattern>GMAIL</pattern>
 	<template>
-		<srai>OPEN http://gmail.com</srai>
+		<srai>OPEN WEBSITE http://gmail.com</srai>
+	</template>
 	</category>
 
 	<category>
 		<pattern>OPEN WEB *</pattern>
-		<template><srai>BROWSER</srai></template>
+		<template><srai>OPEN WEBSITE *</srai></template>
 	</category>
 
 	<category>
