@@ -1,0 +1,26 @@
+<aiml version="1.0">
+
+<!-- This category works with the aiml AIML Set -->
+<category>
+<pattern>LOAD AIML B</pattern>
+<template>
+
+<!-- Load aiml AIML set -->
+<learn>standard/basic.aiml</learn>
+<learn>standard/launch.aiml</learn>
+<learn>standard/alice.aiml</learn>
+<learn>standard/date.aiml</learn>
+<learn>standard/familliar.aiml</learn>
+<learn>standard/inappropriate.aiml</learn>
+<learn>standard/inquiry.aiml</learn>
+<learn>standard/insult.aiml</learn>
+<learn>standard/train.aiml</learn>
+<learn>standard/weather.aiml</learn>
+
+
+
+
+</template>
+</category>
+
+</aiml>

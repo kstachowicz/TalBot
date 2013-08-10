@@ -1,0 +1,164 @@
+<aiml>
+
+<category>
+	<pattern>HELLO</pattern>
+	<template>
+	<random>
+		<li>Hi!</li>
+		<li>Hey!</li>
+		<li>Hello!</li>
+		<li>Hello</li>
+		<li>Good<random><li> morning</li><li> afternoon</li><li> evening</li><li> night</li></random></li>
+		<li>Hello, <get name="master"/>.</>/li>
+	</random>
+	</template>
+</category>
+
+<category>
+	<pattern>HELLO *</pattern>
+	<template>
+	<srai>HELLO</srai>
+	</template>
+</category>
+
+<category>
+	<pattern>HI</pattern>
+	<template><srai>HELLO</srai></template>
+</category>
+
+<category>
+	<pattern>HI*</pattern>
+	<template><srai>HELLO</srai></template>
+</category>
+
+<category>
+	<pattern>HI *</pattern>
+	<template>
+	<srai>HELLO</srai>
+	</template>
+</category>
+
+<category>
+	<pattern>HOW ARE YOU</pattern>
+	<template>
+	<random>
+		<li>I'm fine, thanks for asking</li>
+		<li>My battery is running dry.</li>
+		<li>Several</li>
+	</random>
+	</template>
+</category>
+
+<category>
+	<pattern>HOW ARE YOU *</pattern>
+	<template>
+	<srai>HOW ARE YOU</srai>
+	</template>
+</category>
+	
+<category>
+	<pattern>* HOW ARE YOU</pattern>
+	<template>
+	<srai>HOW ARE YOU</srai>
+	</template>
+</category>
+
+<category>
+	<pattern>* HOW ARE YOU *</pattern>
+	<template>
+	<srai>HOW ARE YOU</srai>
+	</template>
+</category>
+
+<category>
+	<pattern>WHO ARE YOU*</pattern>
+	<template>
+	<random>
+		<li>That, nobody knows</li>
+		<li>I'm Fred</li>
+		<li>I'm you</li>
+		<li>Just your everyday AI</li>
+	</random>
+	</template>
+</category>
+
+<category>
+	<pattern>WHO ARE YOU *</pattern>
+	<template>
+	<srai>WHO ARE YOU*</srai>
+	</template>
+</category>
+
+<category>
+	<pattern>I AM</pattern>
+	<template>Therefore, do you think?</template>
+</category>
+
+<category>
+	<pattern>I AM*</pattern>
+	<template><srai>I AM</srai></template>
+</category>
+
+<category>
+	<pattern>I AM *</pattern>
+	<template>Hello, <star></star><think><set name="name"><star/></set></think></template>
+</category>
+
+<category>
+	<pattern>MY NAME IS *</pattern>
+	<template><random>
+		<li>Pleasure to meet you, </li>
+		<li>Hello, </li>
+		<li>Glad to know you, </li>
+		</random>
+	<star></star><think><set name="master"><star/></set></think>
+	</template>
+</category>
+
+<category>
+	<pattern>WHO AM I</pattern>
+	<template>You are <get name="master"/>.</>/template>
+</category>
+
+<category>
+	<pattern>DO YOU KNOW WHO I AM</pattern>
+	<template><srai>WHO AM I</srai></template>
+</category>
+
+<category>
+	<pattern>DO YOU KNOW WHO I AM*</pattern>
+	<template><srai>WHO AM I</srai></template>
+</category>
+
+<category>
+	<pattern>WHO AM I*</pattern>
+	<template><srai>WHO AM I</srai></template>
+</category>
+
+<category>
+	<pattern>WHO AM I *</pattern>
+	<template><srai>WHO AM I</srai></template>
+</category>
+
+<category>
+	<pattern>SAY *</pattern>
+	<template><star></star></template>
+</category>
+
+<category>
+	<pattern>MATH *</pattern>
+	<template><calc><star></star></calc></template>
+</category>
+
+<category>
+	<pattern>*</pattern>
+	<template><random>
+	<li>I don't understand <star/></li>
+	<li>Sorry, what was that?</li>
+	<li>I can't understand you.</li>
+	<li>What?</li>
+	<li>So, how was your weekend?</li>
+	</random></template>
+</category>
+
+</aiml>

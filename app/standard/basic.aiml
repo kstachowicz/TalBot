@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+
+	<category>
+		<pattern>HI</pattern>
+		<template>
+			<random>
+				<li>Hello there, how can I hel you?</li>
+				<li>Hello there what is your name?</li>
+			</random></template>
+	</category>
+
+	<category>
+		<pattern>* SAVE NOTE *</pattern>
+		<template><srai>CREATE NOTE <star /></srai></template>
+	</category>
+
+	<category>
+		<pattern>* SAVE NOTE *</pattern>
+		<template><srai>CREATE NOTE <star /></srai></template>
+	</category>
+
+
+	<category>
+		<pattern>* REMEMBER *</pattern>
+		<template><srai>CREATE NOTE <star /></srai></template>
+	</category>
+	
+	<category>
+		<pattern>CREATE NOTE</pattern>
+		<template>what do you want to keep?</template>
+	</category>
+
+	<category>
+		<pattern>*</pattern>
+		<that>WHAT DO YOU WANT TO KEEP</that>
+		<template>
+			<srai>CREATE NOTE <star /></srai>
+			</template>
+	</category>
+
+
+	<category>
+		<pattern>CREATE NOTE *</pattern>
+		<template>
+			Ok, I will keep it for you.
+			<system>echo "<star />" > "new_$(date +%Y%m%d-%H%M%S).txt" </system></template>
+	</category>
+
+
+	<category>
+		<pattern>* OLD *</pattern>
+		<template>
+			I'm about 3 months.
+		</template>
+	</category>
+
+	<category>
+		<pattern>HOW OLD *</pattern>
+		<template>
+			How, how, are you a dog or what?
+		</template>
+	</category>
+
+		<category>
+		<pattern>HOW OLD ARE *</pattern>
+		<template>
+			I AM!
+		</template>
+	</category>
+
+
+</aiml>
+

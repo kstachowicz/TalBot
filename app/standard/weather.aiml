@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+
+
+	<category>
+		<pattern>SEARCH WEATHER *</pattern>
+		<template>Give me a second... 
+			<think><set name="topic">WEATHER</set></think>
+			<system>python system/weather.py <star /></system></template>
+		</category>
+
+		<topic name="WEATHER">
+		  <category>
+			<pattern>*</pattern>
+			<template>
+				<srai>SEARCH WEATHER <star /></srai>
+				</template>
+		</category>
+
+		</topic>
+
+
+		<category>
+			<pattern>* WEATHER</pattern>
+			<template>
+				<srai>SEARCH WEATHER <star/></srai>
+			</template>
+		</category>
+
+			<category>
+			<pattern>* WEATHER GOING LIKE</pattern>
+			<template>
+				<srai>SEARCH WEATHER <star/></srai>
+			</template>
+		</category>
+
+
+		<category>
+			<pattern>NEED * UMBRELLA</pattern>
+			<template>
+				<srai>SEARCH WEATHER <star/></srai>
+			</template>
+		</category>
+
+
+		<category>
+			<pattern>WEATHER</pattern>
+			<template>
+				<condition>
+				<li name="location" value="">Ok but where are you right now?</li>
+	<li><srai>SEARCH WEATHER <get name="location" /></srai></li>
+				</condition>
+			</template>
+		</category>
+
+		<category>
+			<pattern>*</pattern>
+			<that>OK BUT WHERE ARE YOU RIGHT NOW</that>
+			<template>
+				I will remember that from now on.
+				<set name="location"><star/></set> 
+
+				I will find forecast for <star /> now...
+				<srai>SEARCH WEATHER <star /></srai>
+				jo: <get name="location" />
+			</template>
+		</category>
+
+		<category>
+			<pattern>* FORECAST</pattern>
+			<template>
+				<srai>SEARCH WEATHER <star/></srai>
+			</template>
+		</category>
+
+		<category>
+			<pattern>* FORECAST</pattern>
+			<template>
+				<srai>SEARCH WEATHER <star/></srai>
+			</template>
+		</category>
+
+
+		<category>
+			<pattern>SEE WEATHER</pattern>
+			<template>
+				Of course I can! You want to know weather for your place?
+				<srai>WEATHER<star/></srai>
+			</template>
+		</category>
+
+		<category>
+			<pattern>SEE * WEATHER</pattern>
+			<template>
+				Of course I can! 
+				<srai>SEARCH WEATHER <star/></srai>
+			</template>
+		</category>
+
+		<category>
+			<pattern>SEARCH * WEATHER</pattern>
+			<template>
+				<srai>SEARCH WEATHER <star/></srai>
+			</template>
+		</category>
+
+		<category>
+			<pattern>SEARCH * WEATHER</pattern>
+			<template>
+				<srai>SEARCH WEATHER <star/></srai>
+			</template>
+		</category>
+
+		<category>
+			<pattern>CHECK * FORECAST</pattern>
+			<template>
+				<srai>SEARCH WEATHER <star/></srai>
+			</template>
+		</category>
+
+		<category>
+			<pattern>CHECK WEATHER * FORECAST</pattern>
+			<template>
+				<srai>SEARCH WEATHER <star/></srai>
+			</template>
+		</category>
+
+
+		<category>
+			<pattern>CHECK WEATHER * FORECAST</pattern>
+			<template>
+				<srai>SEARCH WEATHER <star/></srai>
+			</template>
+		</category>
+
+
+		<category>
+			<pattern>CHECK WEATHER * FORECAST</pattern>
+			<template>
+				<srai>SEARCH WEATHER <star/></srai>
+			</template>
+		</category>
+
+
+		<category>
+			<pattern>* COLD</pattern>
+			<template>
+				<srai>SEARCH WEATHER <star/></srai>
+			</template>
+		</category>
+
+		<category>
+			<pattern>* HOT</pattern>
+			<template>
+				<srai>SEARCH WEATHER <star/></srai>
+			</template>
+		</category>
+
+		<category>
+			<pattern>* CLOUDY</pattern>
+			<template>
+				<srai>SEARCH WEATHER <star/></srai>
+			</template>
+		</category>
+
+		<category>
+			<pattern>* WINDY</pattern>
+			<template>
+				<srai>SEARCH WEATHER <star/></srai>
+			</template>
+		</category>
+
+
+		<category>
+			<pattern>* SUNNY</pattern>
+			<template>
+				<srai>SEARCH WEATHER <star/></srai>
+			</template>
+		</category>
+
+		<category>
+			<pattern>* TAKE UMBRELLA</pattern>
+			<template>
+				<srai>WEATHER</srai>
+			</template>
+		</category>
+
+		<category>
+			<pattern>TAKE UMBRELLA *</pattern>
+			<template>
+				<srai>SEARCH WEATHER<start /></srai>
+			</template>
+		</category>
+
+		<category>
+			<pattern>* TEMPERATURE</pattern>
+			<template>
+				<srai>SEARCH WEATHER<star /></srai>
+			</template>
+		</category>
+
+		<category>
+			<pattern>* TEMPERATURE</pattern>
+			<template>
+				<srai>WEATHER</srai>
+			</template>
+		</category>
+
+
+		<category>
+			<pattern>* RAIN</pattern>
+			<template>
+				<srai>SEARCH WEATHER <star /></srai>
+			</template>
+		</category>
+
+
+	</aiml>
+
