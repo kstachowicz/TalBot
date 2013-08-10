@@ -50,12 +50,36 @@ def clear_question(question):
 
 	return question
 
+def connect_quoted_tokens(tokens):
+	begin_quote = False
+	print "WESZLO: ", tokens
+	connected_token = ""
+	new_tokens = []
+
+	for token in tokens:
+		if token == "``": 
+			begin_quote = True
+		elif token == "''":
+			begin_quote = False
+			new_tokens.append(connected_token)
+			connected_token = ""
+		elif begin_quote:
+			connected_token = "{0} {1}".format(connected_token, token)
+		else:
+			new_tokens.append(token)
+
+	print "WYCHODZI: ", new_tokens
+	return new_tokens
+				
+
+
 
 def preprocess_question(question):
 	"""sentences = nltk.sent_tokenize(question)"""
 	lemmatizer = nltk.WordNetLemmatizer()
 	
 	sentences = nltk.word_tokenize(question) #for sent in question]
+	sentences = connect_quoted_tokens(sentences)
 	sentences = [lemmatizer.lemmatize(word) for word in sentences]
 
 
