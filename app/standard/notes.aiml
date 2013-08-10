@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+
+
+
+	<category>
+		<pattern>XLEARNNUMBER * XSPLIT *</pattern>
+		<template>
+			<think><set name="contacts"><person/> - <star index="2"/><br/><get name="contacts"/></set></think>
+
+
+			<learnf>
+				<category>
+					<pattern>XPHONE <eval><star index="1"/></eval> <eval><get name="typeofcontact"/></eval> NUMBER</pattern>
+					<template><eval><star index="2"/></eval></template>
+				</category>
+			</learnf>
+
+			<learnf>
+				<category>
+					<pattern>XPHONE <eval><get name="newcontact"/></eval> <eval><get name="typeofcontact"/></eval> NUMBER</pattern>
+					<template><eval><star index="2"/></eval></template>
+				</category>
+			</learnf>
+
+
+		</template>
+	</category>
+
+
+	
+	<category>
+		<pattern>SAVE NOTE</pattern>
+		<template><srai>CREATE NOTE</srai></template>
+	</category>
+
+	<category>
+		<pattern>SAVE NOTE *</pattern>
+		<template><srai>CREATE NOTE <star /></srai></template>
+	</category>
+
+
+	<category>
+		<pattern>REMEMBER *</pattern>
+		<template><srai>CREATE NOTE <star /></srai></template>
+	</category>
+	
+	<category>
+		<pattern>CREATE NOTE</pattern>
+		<think><set name="topic">REMEMBER</set></think>
+		<template>what do you want to keep?</template>
+	</category>
+
+	<category>
+		<pattern>* CREATE * NOTE</pattern>
+		<think><set name="topic">REMEMBER</set></think>
+		<template>what do you want to keep?</template>
+	</category>
+
+	<topic name="REMEMBER">
+		<category>
+			<pattern>*</pattern>
+			<that>WHAT DO YOU WANT TO KEEP</that>
+			<template>
+				<srai>CREATE NOTE <star /></srai>
+				<think><set name="topic"></set></think>
+			</template>
+		</category>
+	</topic>
+
+
+	<category>
+		<pattern>CREATE NOTE *</pattern>
+		<template>
+			Ok, I will keep it for you.
+			<system>python system/notes.py add "<star />"</system></template>
+		</category>
+
+	<category>
+		<pattern>ADD * NOTE</pattern>
+		<template>
+			<srai>CREATE NOTE</srai>
+		</template>
+	</category>
+
+	
+	<category>
+		<pattern>ADD * NOTE *</pattern>
+		<template>
+			<srai>CREATE NOTE <star index="2" /></srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>LIST NOTE</pattern>
+		<template>
+			Here are all the notes I kept for you:
+			<system>python system/notes.py list</system>
+			</template>
+		</category>
+
+		<category>
+		<pattern>SHOW * NOTE</pattern>
+		<template>
+			<srai>LIST NOTE</srai>
+			</template>
+		</category>
+
+			<category>
+		<pattern>RECENT NOTE</pattern>
+		<template>
+			<system>python system/notes.py recent</system>
+			</template>
+		</category>
+
+		<category>
+		<pattern>* RECENT NOTE</pattern>
+		<template>
+			<srai>RECENT NOTE</srai>
+			</template>
+		</category>
+
+		<category>
+		<pattern>* READ * NOTE</pattern>
+		<template>
+			<srai>LIST NOTE</srai>
+			</template>
+		</category>
+
+
+	</aiml>
+

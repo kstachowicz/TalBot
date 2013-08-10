@@ -10,42 +10,6 @@
 			</random></template>
 	</category>
 
-	<category>
-		<pattern>* SAVE NOTE *</pattern>
-		<template><srai>CREATE NOTE <star /></srai></template>
-	</category>
-
-	<category>
-		<pattern>* SAVE NOTE *</pattern>
-		<template><srai>CREATE NOTE <star /></srai></template>
-	</category>
-
-
-	<category>
-		<pattern>* REMEMBER *</pattern>
-		<template><srai>CREATE NOTE <star /></srai></template>
-	</category>
-	
-	<category>
-		<pattern>CREATE NOTE</pattern>
-		<template>what do you want to keep?</template>
-	</category>
-
-	<category>
-		<pattern>*</pattern>
-		<that>WHAT DO YOU WANT TO KEEP</that>
-		<template>
-			<srai>CREATE NOTE <star /></srai>
-			</template>
-	</category>
-
-
-	<category>
-		<pattern>CREATE NOTE *</pattern>
-		<template>
-			Ok, I will keep it for you.
-			<system>echo "<star />" > "new_$(date +%Y%m%d-%H%M%S).txt" </system></template>
-	</category>
 
 
 	<category>
