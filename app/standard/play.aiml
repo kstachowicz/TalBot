@@ -8,7 +8,7 @@
 
 <category>
 <pattern>PLAY *</pattern>
-<template><system>open "http://www.youtube.com/embed?listType=search&amp;list=<star/>&amp;autoplay=1"</system>2222Now loading your choice of music. I hope you like it. Please wait a moment while I load it for you.</template>
+<template><system>open "http://www.youtube.com/embed?listType=search&amp;list=<star/>&amp;autoplay=1"</system>Now loading your choice of music. I hope you like it. Please wait a moment while I load it for you.</template>
 </category>
 
 <category>

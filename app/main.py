@@ -3,11 +3,15 @@ from nltk.tokenize import word_tokenize
 import nltk, re, pprint
 from nltk.corpus import conll2000
 import transformations 
-import aiml
+import aiml, urllib
 
 import commands
 from nltk.corpus import stopwords
 import string
+from speak import speakSpeechFromText
+
+FILE_TYPE_STR = ".mp3"
+googleTTS = "http://translate.google.com/translate_tts?tl=en&q="
 
 sample_responses = ["mhm", "and then what..?", "that's interesting", "tell me more :)"]
 
@@ -18,6 +22,10 @@ knowledge_base = {"who are you": ["I am Tala. And I'm a bot.", "And you?", "Not 
 punctuation = ',.?!'
 
 basic_grammar = "NP: {<DT>?<JJ>*<NN>}"
+
+# Google TTS will return a 403 if the request isn't made with a common browser UA
+class AppURLopener(urllib.FancyURLopener):
+	version = "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.2.3) Gecko/20100401 Firefox/3.6.3 ( .NET CLR 3.5.30729)"
 
 
 def get_sample_response():
@@ -135,7 +143,6 @@ def regularize(tokens):
 	tokens = [x for x in tokens if x is not None]
 	return tokens
 
-
 def main():
 
     aiml_parser = aiml.Kernel()
@@ -159,7 +166,11 @@ def main():
 
     	previous_question = question	
     	pattern = get_answer(processed_question)
-    	print aiml_parser.respond(pattern)
+    	final_response = aiml_parser.respond(pattern)
+    	print "Should speak:"
+    	print final_response
+    	speakSpeechFromText(final_response)
+		
 
 
 
