@@ -6,22 +6,19 @@
 <template>
 
 <!-- Load aiml AIML set -->
+<learn>standard/bot_profile.aiml</learn>
+<learn>standard/personality.aiml</learn>
+<learn>standard/sample.aiml</learn>
 <learn>standard/basic.aiml</learn>
 <learn>standard/launch.aiml</learn>
-<learn>standard/alice.aiml</learn>
 <learn>standard/date.aiml</learn>
-<learn>standard/familliar.aiml</learn>
 <learn>standard/inappropriate.aiml</learn>
 <learn>standard/inquiry.aiml</learn>
 <learn>standard/insult.aiml</learn>
-<learn>standard/train.aiml</learn>
 <learn>standard/weather.aiml</learn>
 <learn>standard/notes.aiml</learn>
 <learn>standard/play.aiml</learn>
 <learn>standard/translate.aiml</learn>
-
-
-
 
 </template>
 </category>

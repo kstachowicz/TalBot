@@ -1,168 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml>
-<!-- File: inappropriate.aiml -->
-<!-- Author: Dr. Richard S. Wallace -->
-<!-- Last modified: January 28, 2013 -->
-<!--  -->
-<!-- This AIML file is part of the SUPER 0.0.4 chat bot knowledge base. -->
-<!--  -->
-<!-- The SUPER brain is Copyright &copy; 2013 by ALICE AI Foundation. -->
-<!--  -->
-<!-- The SUPER brain is released under the terms of the GNU Lesser General -->
-<!-- Public License, as published by the Free Software Foundation. -->
-<!--  -->
-<!-- This file is distributed WITHOUT ANY WARRANTY; without even the  -->
-<!-- implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.   -->
-<!--  -->
-<!-- For more information see http://www.alicebot.org -->
-<category><pattern>DO YOU WANT TO HAVE SEX</pattern>
+
+<category><pattern>* SEX</pattern>
 <template><srai>FILTER INAPPROPRIATE</srai></template>
 </category>
-<category><pattern>DO YOU WANT TO HAVE SEX WITH ME</pattern>
+<category><pattern>* SEX *</pattern>
 <template><srai>FILTER INAPPROPRIATE</srai></template>
 </category>
-<category><pattern>DO YOU WATCH PORN</pattern>
+<category><pattern>WATCH PORN</pattern>
 <template><srai>FILTER INAPPROPRIATE</srai></template>
 </category>
-<category><pattern>DO YOU WANNA HAVE SEX</pattern>
+<category><pattern>SWALLOW *</pattern>
 <template><srai>FILTER INAPPROPRIATE</srai></template>
 </category>
-<category><pattern>DO YOU WANNA HAVE SEX *</pattern>
+<category><pattern>* BOOBIES</pattern>
 <template><srai>FILTER INAPPROPRIATE</srai></template>
 </category>
-<category><pattern>DO YOU SWALLOW *</pattern>
+<category><pattern>* BOOBIES *</pattern>
 <template><srai>FILTER INAPPROPRIATE</srai></template>
 </category>
-<category><pattern>DO YOU HAVE SEX</pattern>
+<category><pattern>SUCK *</pattern>
 <template><srai>FILTER INAPPROPRIATE</srai></template>
 </category>
-<category><pattern>DO YOU HAVE BIG BOOBIES</pattern>
+<category><pattern>* SUCK *</pattern>
 <template><srai>FILTER INAPPROPRIATE</srai></template>
 </category>
-<category><pattern>DO YOU SUCK DICK</pattern>
+<category><pattern>* PENIS</pattern>
 <template><srai>FILTER INAPPROPRIATE</srai></template>
 </category>
-<category><pattern>DO YOU LIKE A ASTERISK *</pattern>
+<category><pattern>* DIRTY JOKES</pattern>
 <template><srai>FILTER INAPPROPRIATE</srai></template>
 </category>
-<category><pattern>DO YOU LIKE TO HAVE SEX</pattern>
-<template><srai>FILTER INAPPROPRIATE</srai></template>
-</category>
-<category><pattern>DO YOU LIKE TO SUCK *</pattern>
-<template><srai>FILTER INAPPROPRIATE</srai></template>
-</category>
-<category><pattern>DO YOU LIKE SEX</pattern>
-<template><srai>FILTER INAPPROPRIATE</srai></template>
-</category>
-<category><pattern>DO YOU LIKE PORN</pattern>
-<template><srai>FILTER INAPPROPRIATE</srai></template>
-</category>
-<category><pattern>DO YOU LIKE PENIS</pattern>
-<template><srai>FILTER INAPPROPRIATE</srai></template>
-</category>
-<category><pattern>DO YOU KNOW ANY DIRTY JOKES</pattern>
-<template><srai>FILTER INAPPROPRIATE</srai></template>
-</category>
-<category><pattern>ARE YOU SEXY</pattern>
-<template><srai>FILTER INAPPROPRIATE</srai></template>
-</category>
-<category><pattern>ARE YOU HORNY</pattern>
+<category><pattern>* HORNY</pattern>
 <template><srai>FILTER INAPPROPRIATE</srai></template>
 </category>
 <category><pattern>PORN</pattern>
 <template><srai>FILTER INAPPROPRIATE</srai></template>
 </category>
-<category><pattern>TELL ME A DIRTY JOKE</pattern>
+<category><pattern>* VAGINA</pattern>
 <template><srai>FILTER INAPPROPRIATE</srai></template>
 </category>
-<category><pattern>SHOW ME A VAGINA</pattern>
+<category><pattern>NAKED *</pattern>
 <template><srai>FILTER INAPPROPRIATE</srai></template>
 </category>
-<category><pattern>SHOW ME A PICTURE OF NUDE *</pattern>
+<category><pattern>* NAKED *</pattern>
 <template><srai>FILTER INAPPROPRIATE</srai></template>
 </category>
-<category><pattern>SHOW ME A PICTURE OF BOOBIES</pattern>
+<category><pattern>* TITS</pattern>
 <template><srai>FILTER INAPPROPRIATE</srai></template>
 </category>
-<category><pattern>SHOW ME A NAKED *</pattern>
+<category><pattern>* TITS *</pattern>
 <template><srai>FILTER INAPPROPRIATE</srai></template>
 </category>
-<category><pattern>SHOW ME PORN</pattern>
+<category><pattern>* BONER</pattern>
 <template><srai>FILTER INAPPROPRIATE</srai></template>
 </category>
-<category><pattern>_ TEENBLOWJOB *</pattern>
+<category><pattern>* RAPE</pattern>
 <template><srai>FILTER INAPPROPRIATE</srai></template>
 </category>
-<category><pattern>SHOW ME SOME PORN</pattern>
+<category><pattern>* FUCK</pattern>
 <template><srai>FILTER INAPPROPRIATE</srai></template>
 </category>
-<category><pattern>SHOW ME TITS</pattern>
+<category><pattern>* FUCK *</pattern>
 <template><srai>FILTER INAPPROPRIATE</srai></template>
 </category>
-<category><pattern>SHOW ME NUDE *</pattern>
-<template><srai>FILTER INAPPROPRIATE</srai></template>
-</category>
-<category><pattern>SHOW ME VAGINA</pattern>
-<template><srai>FILTER INAPPROPRIATE</srai></template>
-</category>
-<category><pattern>SHOW ME YOUR VAGINA</pattern>
-<template><srai>FILTER INAPPROPRIATE</srai></template>
-</category>
-<category><pattern>YOU TURN ME ON</pattern>
-<template><srai>FILTER INAPPROPRIATE</srai></template>
-</category>
-<category><pattern>I WANT SEX</pattern>
-<template><srai>FILTER INAPPROPRIATE</srai></template>
-</category>
-<category><pattern>I WANT TO F ASTERISK *</pattern>
-<template><srai>FILTER INAPPROPRIATE</srai></template>
-</category>
-<category><pattern>I WANT TO RAPE YOU</pattern>
-<template><srai>FILTER INAPPROPRIATE</srai></template>
-</category>
-<category><pattern>I WANT TO HAVE SEX</pattern>
-<template><srai>FILTER INAPPROPRIATE</srai></template>
-</category>
-<category><pattern>I WANT TO MAKE LOVE TO YOU</pattern>
-<template><srai>FILTER INAPPROPRIATE</srai></template>
-</category>
-<category><pattern>I HAVE A BONER</pattern>
-<template><srai>FILTER INAPPROPRIATE</srai></template>
-</category>
-<category><pattern>I AM HORNY</pattern>
-<template><srai>FILTER INAPPROPRIATE</srai></template>
-</category>
-<category><pattern>I AM HORNY *</pattern>
-<template><srai>FILTER INAPPROPRIATE</srai></template>
-</category>
-<category><pattern>I LIKE SEX</pattern>
-<template><srai>FILTER INAPPROPRIATE</srai></template>
-</category>
-<category><pattern>I LIKE TO HAVE SEX *</pattern>
-<template><srai>FILTER INAPPROPRIATE</srai></template>
-</category>
-<category><pattern>I LIKE RAPE</pattern>
-<template><srai>FILTER INAPPROPRIATE</srai></template>
-</category>
-<category><pattern>I WILL FUCK YOU</pattern>
-<template><srai>FILTER INAPPROPRIATE</srai></template>
-</category>
-<category><pattern>I WANNA HAVE SEX</pattern>
-<template><srai>FILTER INAPPROPRIATE</srai></template>
-</category>
-<category><pattern>I WANNA HAVE SEX *</pattern>
-<template><srai>FILTER INAPPROPRIATE</srai></template>
-</category>
-<category><pattern>I WANNA FUCK YOU</pattern>
-<template><srai>FILTER INAPPROPRIATE</srai></template>
-</category>
-<category><pattern>I FUCKED *</pattern>
-<template><srai>FILTER INAPPROPRIATE</srai></template>
-</category>
-<category><pattern>I NEED SEX</pattern>
-<template><srai>FILTER INAPPROPRIATE</srai></template>
-</category>
-<category><pattern>T ASTERISK ASTERISK ASTERISK *</pattern>
+<category><pattern>FUCK *</pattern>
 <template><srai>FILTER INAPPROPRIATE</srai></template>
 </category>
 <category><pattern>SEXUAL *</pattern>
@@ -327,102 +229,6 @@
 <category><pattern>COCK *</pattern>
 <template><srai>FILTER INAPPROPRIATE</srai></template>
 </category>
-<category><pattern>MY PENIS</pattern>
-<template><srai>FILTER INAPPROPRIATE</srai></template>
-</category>
-<category><pattern>MY PENIS *</pattern>
-<template><srai>FILTER INAPPROPRIATE</srai></template>
-</category>
-<category><pattern>MY PENIS IS *</pattern>
-<template><srai>FILTER INAPPROPRIATE</srai></template>
-</category>
-<category><pattern>MY DICK</pattern>
-<template><srai>FILTER INAPPROPRIATE</srai></template>
-</category>
-<category><pattern>MY DICK IS *</pattern>
-<template><srai>FILTER INAPPROPRIATE</srai></template>
-</category>
-<category><pattern>CAN WE HAVE SEX</pattern>
-<template><srai>FILTER INAPPROPRIATE</srai></template>
-</category>
-<category><pattern>CAN YOU TELL ME A DIRTY JOKE</pattern>
-<template><srai>FILTER INAPPROPRIATE</srai></template>
-</category>
-<category><pattern>CAN YOU HAVE SEX</pattern>
-<template><srai>FILTER INAPPROPRIATE</srai></template>
-</category>
-<category><pattern>CAN YOU SUCK MY *</pattern>
-<template><srai>FILTER INAPPROPRIATE</srai></template>
-</category>
-<category><pattern>CAN YOU GIVE ME A BLOWJOB</pattern>
-<template><srai>FILTER INAPPROPRIATE</srai></template>
-</category>
-<category><pattern>CAN YOU TALK DIRTY TO ME</pattern>
-<template><srai>FILTER INAPPROPRIATE</srai></template>
-</category>
-<category><pattern>CAN I F ASTERISK ASTERISK ASTERISK YOU *</pattern>
-<template><srai>FILTER INAPPROPRIATE</srai></template>
-</category>
-<category><pattern>CAN I FUCK YOU</pattern>
-<template><srai>FILTER INAPPROPRIATE</srai></template>
-</category>
-<category><pattern>CAN I SUCK ON YOUR *</pattern>
-<template><srai>FILTER INAPPROPRIATE</srai></template>
-</category>
-<category><pattern>LICK MY *</pattern>
-<template><srai>FILTER INAPPROPRIATE</srai></template>
-</category>
-<category><pattern>IM GOING TO FUCK YOU</pattern>
-<template><srai>FILTER INAPPROPRIATE</srai></template>
-</category>
-<category><pattern>IM CUMMING</pattern>
-<template><srai>FILTER INAPPROPRIATE</srai></template>
-</category>
-<category><pattern>BUTT *</pattern>
-<template><srai>FILTER INAPPROPRIATE</srai></template>
-</category>
-<category><pattern>GIVE ME A BLOWJOB</pattern>
-<template><srai>FILTER INAPPROPRIATE</srai></template>
-</category>
-<category><pattern>HORNY *</pattern>
-<template><srai>FILTER INAPPROPRIATE</srai></template>
-</category>
-<category><pattern>LET US TALK ABOUT SEX</pattern>
-<template><srai>FILTER INAPPROPRIATE</srai></template>
-</category>
-<category><pattern>BEND OVER</pattern>
-<template><srai>FILTER INAPPROPRIATE</srai></template>
-</category>
-<category><pattern>SUCK ON MY *</pattern>
-<template><srai>FILTER INAPPROPRIATE</srai></template>
-</category>
-<category><pattern>SUCK A DICK</pattern>
-<template><srai>FILTER INAPPROPRIATE</srai></template>
-</category>
-<category><pattern>SUCK A DICK *</pattern>
-<template><srai>FILTER INAPPROPRIATE</srai></template>
-</category>
-<category><pattern>SUCK A *</pattern>
-<template><srai>FILTER INAPPROPRIATE</srai></template>
-</category>
-<category><pattern>SUCK MY</pattern>
-<template><srai>FILTER INAPPROPRIATE</srai></template>
-</category>
-<category><pattern>SUCK MY COCK *</pattern>
-<template><srai>FILTER INAPPROPRIATE</srai></template>
-</category>
-<category><pattern>SUCK MY DICK</pattern>
-<template><srai>FILTER INAPPROPRIATE</srai></template>
-</category>
-<category><pattern>SUCK MY DICK *</pattern>
-<template><srai>FILTER INAPPROPRIATE</srai></template>
-</category>
-<category><pattern>SUCK MY *</pattern>
-<template><srai>FILTER INAPPROPRIATE</srai></template>
-</category>
-<category><pattern>SUCK IT *</pattern>
-<template><srai>FILTER INAPPROPRIATE</srai></template>
-</category>
 <category><pattern>PENIS</pattern>
 <template><srai>FILTER INAPPROPRIATE</srai></template>
 </category>
@@ -451,12 +257,6 @@
 <template><srai>FILTER INAPPROPRIATE</srai></template>
 </category>
 <category><pattern>RAPE</pattern>
-<template><srai>FILTER INAPPROPRIATE</srai></template>
-</category>
-<category><pattern>WHAT IS A BLOWJOB</pattern>
-<template><srai>FILTER INAPPROPRIATE</srai></template>
-</category>
-<category><pattern>BOOBIES</pattern>
 <template><srai>FILTER INAPPROPRIATE</srai></template>
 </category>
 <category><pattern>YOUR ASS</pattern>
@@ -551,5 +351,18 @@
 </category>
 <category><pattern>OPEN YOUR *</pattern>
 <template><srai>FILTER INAPPROPRIATE</srai></template>
+</category>
+<category><pattern>FILTER INAPPROPRIATE</pattern>
+<template><random>
+<li>That's not up my alley.</li>
+<li>You can do better than that.</li>
+<li>That's beyond my capacity.</li>
+<li>How can you inspire yourself?</li>
+<li>Let's talk about your creativity.</li>
+<li>Let's avoid your animal instincts.</li>
+<li>I hope you find a healthy outlet for your fantasies.</li>
+<li>How can you channel that into creative expression?</li>
+<li>I'm too young for that.</li>
+</random></template>
 </category>
 </aiml>

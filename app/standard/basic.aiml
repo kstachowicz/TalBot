@@ -5,9 +5,29 @@
 		<pattern>HI</pattern>
 		<template>
 			<random>
-				<li>Hello there, how can I hel you?</li>
-				<li>Hello there what is your name?</li>
-			</random></template>
+			<li>Hey</li>
+			<li>Hi,</li>
+			<li>Hi there</li>
+			<li>What's up,</li>
+			<li>How are you,</li>
+			<li>Glad to see you,</li>
+			<li>Nice to meet you,</li>
+			<li>Glad to know you,</li>
+			<li>How can I help you,</li>
+			<li>How are you doing,</li>
+			<li>OK I will call you</li>
+			<li>Pleased to meet you,</li>
+			<li>It's good to see you,</li>
+			<li>It's good to meet you,</li>
+			<li>That's a very nice name,</li>
+			<li>I am very pleased to meet you</li>
+			<li>I am always glad to make new friends,</li>
+			<li>I'm pleased to introduce myself to you,</li>
+			<li>It is a pleasure to introduce myself to you,</li>
+			<li>Hello there, how can I hel you?</li>
+			<li>Hello there what is your name?</li>
+		</random>
+	</template>
 	</category>
 
 
@@ -26,7 +46,7 @@
 		</template>
 	</category>
 
-		<category>
+	<category>
 		<pattern>HOW OLD ARE *</pattern>
 		<template>
 			I AM!

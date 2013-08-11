@@ -105,7 +105,7 @@
 </category>
 
 <category>
-	<pattern>MY NAME IS *</pattern>
+	<pattern>NAME *</pattern>
 	<template><random>
 		<li>Pleasure to meet you, </li>
 		<li>Hello, </li>
@@ -113,41 +113,6 @@
 		</random>
 	<star></star><think><set name="master"><star/></set></think>
 	</template>
-</category>
-
-<category>
-	<pattern>WHO AM I</pattern>
-	<template>You are <get name="master"/>.</>/template>
-</category>
-
-<category>
-	<pattern>DO YOU KNOW WHO I AM</pattern>
-	<template><srai>WHO AM I</srai></template>
-</category>
-
-<category>
-	<pattern>DO YOU KNOW WHO I AM*</pattern>
-	<template><srai>WHO AM I</srai></template>
-</category>
-
-<category>
-	<pattern>WHO AM I*</pattern>
-	<template><srai>WHO AM I</srai></template>
-</category>
-
-<category>
-	<pattern>WHO AM I *</pattern>
-	<template><srai>WHO AM I</srai></template>
-</category>
-
-<category>
-	<pattern>SAY *</pattern>
-	<template><star></star></template>
-</category>
-
-<category>
-	<pattern>MATH *</pattern>
-	<template><calc><star></star></calc></template>
 </category>
 
 <category>

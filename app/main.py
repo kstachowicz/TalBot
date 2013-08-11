@@ -52,7 +52,6 @@ def clear_question(question):
 
 def connect_quoted_tokens(tokens):
 	begin_quote = False
-	print "WESZLO: ", tokens
 	connected_token = ""
 	new_tokens = []
 
@@ -68,7 +67,6 @@ def connect_quoted_tokens(tokens):
 		else:
 			new_tokens.append(token)
 
-	print "WYCHODZI: ", new_tokens
 	return new_tokens
 				
 

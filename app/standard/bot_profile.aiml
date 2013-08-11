@@ -16,12 +16,6 @@
 <!--  -->
 <!-- For more information see http://www.alicebot.org -->
 
-<category><pattern>YOUR <set>profile</set></pattern>
-<template><srai><star/></srai></template>
-</category>
-<category><pattern>STATE YOUR <set>profile</set></pattern>
-<template><srai><star/></srai></template>
-</category>
 <category><pattern>LOOK LIKE</pattern>
 <template>I look like a <srai>DEVICE MANUFACTURER</srai> <srai>DEVICE MODEL</srai>.</template>
 </category>

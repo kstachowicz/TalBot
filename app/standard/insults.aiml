@@ -1,69 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml>
-<!-- File: insults.aiml -->
-<!-- Author: Dr. Richard S. Wallace -->
-<!-- Last modified: January 28, 2013 -->
-<!--  -->
-<!-- This AIML file is part of the SUPER 0.0.4 chat bot knowledge base. -->
-<!--  -->
-<!-- The SUPER brain is Copyright &copy; 2013 by ALICE AI Foundation. -->
-<!--  -->
-<!-- The SUPER brain is released under the terms of the GNU Lesser General -->
-<!-- Public License, as published by the Free Software Foundation. -->
-<!--  -->
-<!-- This file is distributed WITHOUT ANY WARRANTY; without even the  -->
-<!-- implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.   -->
-<!--  -->
-<!-- For more information see http://www.alicebot.org -->
-<category><pattern>ARE YOU A WHORE</pattern>
+<category><pattern>WHORE</pattern>
 <template><srai>FILTER INSULT</srai></template>
 </category>
-<category><pattern>ARE YOU A BITCH</pattern>
+<category><pattern>BITCH</pattern>
 <template><srai>FILTER INSULT</srai></template>
 </category>
-<category><pattern>YOU F ASTERISK ASTERISK ASTERISK ASTERISK ASTERISK ASTERISK *</pattern>
-<template><srai>FILTER INSULT</srai></template>
-</category>
-<category><pattern>YOU IDIOT</pattern>
-<template><srai>FILTER INSULT</srai></template>
-</category>
-<category><pattern>YOU ARE A B ASTERISK ASTERISK ASTERISK ASTERISK</pattern>
-<template><srai>FILTER INSULT</srai></template>
-</category>
-<category><pattern>YOU ARE A B ASTERISK ASTERISK ASTERISK ASTERISK *</pattern>
-<template><srai>FILTER INSULT</srai></template>
-</category>
-<category><pattern>YOU ARE A C ASTERISK ASTERISK ASTERISK</pattern>
-<template><srai>FILTER INSULT</srai></template>
-</category>
-<category><pattern>YOU ARE A DICK</pattern>
-<template><srai>FILTER INSULT</srai></template>
-</category>
-<category><pattern>YOU ARE A BITCH</pattern>
+<category><pattern>IDIOT</pattern>
 <template><srai>FILTER INSULT</srai></template>
 </category>
 <category><pattern>F U *</pattern>
-<template><srai>FILTER INSULT</srai></template>
-</category>
-<category><pattern>F ASTERISK ASTERISK ASTERISK YOU BITCH</pattern>
-<template><srai>FILTER INSULT</srai></template>
-</category>
-<category><pattern>B ASTERISK ASTERISK ASTERISK ASTERISK YOU *</pattern>
-<template><srai>FILTER INSULT</srai></template>
-</category>
-<category><pattern>C ASTERISK ASTERISK ASTERISK</pattern>
-<template><srai>FILTER INSULT</srai></template>
-</category>
-<category><pattern>S ASTERISK ASTERISK ASTERISK *</pattern>
-<template><srai>FILTER INSULT</srai></template>
-</category>
-<category><pattern>GO FUCK YOURSELF</pattern>
-<template><srai>FILTER INSULT</srai></template>
-</category>
-<category><pattern>GO DIE IN A HOLE</pattern>
-<template><srai>FILTER INSULT</srai></template>
-</category>
-<category><pattern>GO TO HELL *</pattern>
 <template><srai>FILTER INSULT</srai></template>
 </category>
 <category><pattern>DUMB ASS</pattern>
@@ -103,12 +49,6 @@
 <template><srai>FILTER INSULT</srai></template>
 </category>
 <category><pattern>EAT MY *</pattern>
-<template><srai>FILTER INSULT</srai></template>
-</category>
-<category><pattern>WHORE</pattern>
-<template><srai>FILTER INSULT</srai></template>
-</category>
-<category><pattern>HEY B ASTERISK ASTERISK ASTERISK ASTERISK</pattern>
 <template><srai>FILTER INSULT</srai></template>
 </category>
 <category><pattern>HEY BITCH</pattern>
